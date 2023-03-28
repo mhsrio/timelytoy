@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 
-app.post("/user", (req, res) => {
+app.post("/api/user", (req, res) => {
   res.status(201).json({
     status: "OK",
     data: {
@@ -11,7 +11,7 @@ app.post("/user", (req, res) => {
   });
 });
 
-app.post("/organization", (req, res) => {
+app.post("/api/organization", (req, res) => {
   res.status(201).json({
     status: "OK",
     message: "Organization created successfully",
